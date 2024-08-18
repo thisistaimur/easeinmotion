@@ -1,10 +1,13 @@
 name: NodeJS with Grunt
-
 on:
   push:
     branches: [ "master" ]
+    paths-ignore:
+      - '**/*.md' # Ignore changes to markdown files
   pull_request:
     branches: [ "master" ]
+    paths-ignore:
+      - '**/*.md' # Ignore changes to markdown files
 
 jobs:
   build:
@@ -22,7 +25,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
-      run: |
-        npm install
-        grunt
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build and serve website
+      run: grunt serve
