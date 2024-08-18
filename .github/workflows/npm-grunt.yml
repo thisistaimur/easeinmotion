@@ -27,7 +27,7 @@ jobs:
         python-version: 2.7.18 # Specify the Python version to use
 
     - name: Install dependencies
-      run: npm install
+      run: npm install --strict-peer-deps
 
     - name: Build Jekyll site
       run: |
