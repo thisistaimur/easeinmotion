@@ -30,6 +30,7 @@ jobs:
       run: npm install --strict-peer-deps
 
     - name: Build Jekyll site
+      uses: actions/jekyll-build-pages@v1
       run: |
         npm install -g grunt-cli
         grunt serve
