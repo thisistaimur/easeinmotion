@@ -2,7 +2,6 @@
 
 Here you can find all the code and data for the website. The website is built using Jekyll.
 
-
 ## Deployment
 
 The website deploys automatically using Github Actions with pushes to the `master` branch. 
@@ -11,3 +10,7 @@ The website deploys automatically using Github Actions with pushes to the `maste
 
 ## Original template
 A single page Jekyll theme for dental clinics. It's easily customizable and responsive. It comes with svg icons, google map and a working contact form. Docs can be found [here](http://obaez.com/dentistsmile-docs/).
+
+## Author
+<hr/>
+Taimur Khan, Adsata e.K.
